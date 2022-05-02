@@ -1,0 +1,97 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.galeria {
+    padding: 2rem;
+    //background: linear-gradient(180deg, rgba(210, 202, 245, 0.5) 50%, rgba(84, 108, 245, 0.3) 100%);
+    h3 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    margin-bottom: 2rem;
+}
+
+.galeria-imagenes {
+    display: block;
+    @include m.resetear-lista;
+    @include m.grid(2, 2rem);
+    @include m.telefono {
+        @include m.grid(3, 2rem)
+    }
+    @include m.tablet {
+        @include m.grid(4, 2rem);
+    }
+    @include m.desktop {
+        @include m.grid(6, 2rem);
+    }
+}
+
+.galeria-proyectos {
+    @include m.resetear-lista;
+    @include m.grid(2, 2rem);
+    @include m.telefono {
+        @include m.grid(3, 2rem)
+    }
+    @include m.tablet {
+        @include m.grid(4, 2rem);
+    }
+    @include m.desktop {
+        @include m.grid(6, 2rem);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center; // centra vertical y horizontalmente la imagen
+    background-color: rgb(0 0 0/.5);
+    picture {
+        display: block;
+        max-width: 70rem;
+        max-height: 80rem;
+    }
+}
+
+.overlayP {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center; // centra vertical y horizontalmente la imagen
+    background-color: rgb(0 0 0/.5);
+    picture {
+        display: block;
+        max-width: 70rem;
+        max-height: 80rem;
+    }
+}
+
+.btn-cerrar {
+    padding-top: -20rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: v.$blanco;
+    color: v.$negro;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    &:hover {
+        cursor: pointer;
+    }
+}

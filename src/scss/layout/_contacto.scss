@@ -1,0 +1,93 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+.formulario {
+    position: relative;
+    display: block;
+    text-align: center;
+    //width: 35rem;
+    padding: 0;
+    //max-width: 80rem;
+    height: 100%;
+    background-color: rgb(12, 236, 162);
+    margin: 2rem auto;
+}
+
+table {
+    //position: absolute;
+    //display: flex;
+    width: 35rem;
+    margin: auto;
+    z-index: 9;
+    a:hover {
+        color: rgb(13, 26, 212);
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.ingresoDatos {
+    display: block;
+    //grid-template-columns: repeat(2, 1fr);
+}
+
+tr {
+    //display: block;
+    margin: 2rem auto;
+    width: 8rem;
+    max-width: 100%;
+}
+
+td {
+    //   display: grid;
+    //  grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+label {
+    display: flex;
+    //justify-content: right;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-size: 1.3rem;
+}
+
+input[type="number"] {
+    font-size: 1.3rem;
+}
+
+input[type="password"] {
+    font-size: 1.3rem;
+}
+
+input[type="email"] {
+    font-size: 1.3rem;
+}
+
+.enviar {
+    padding: .5rem;
+    font-size: 2rem;
+    input {
+        background-color: rgb(252, 240, 74);
+        border-color: rgb(203, 166, 238);
+        cursor: pointer;
+    }
+}
+
+.centro {
+    //background-color: rgb(130, 248, 136);
+    color: rgb(54, 45, 2);
+    display: flex;
+    margin: 1rem auto;
+    a {
+        padding: 0;
+    }
+}
+
+.centro-encabezado label {
+    font-size: 2rem;
+    padding: 0;
+}

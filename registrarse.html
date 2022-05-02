@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor TaToo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>FlorMartinoTattoo</h1>
+            <nav class="navegacion-principal">
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="conociendo.html">Conociendo mas...</a>
+            </nav>
+        </div>
+    </header>
+
+    <form action="">
+        <div class="contenedor formulario">
+            <table>
+                <tr>
+                    <td colspan="2" class="centro">
+                        <p>Formulario de registro</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Nombre </label><input type="text" name="nombre" id="nombre" placeholder="Nombre"> </td>
+                </tr>
+                <tr>
+                    <td><label for="">Apellido </label><input type="text" name="apellido" id="apellido" placeholder="Apellido"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Edad</label> <input type="number" name="edad" id="edad" placeholder="edad"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Correo </label><input type="email" name="correo" placeholder="Correo electronico"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Usuario </label><input type="text" name="usuario" Elija un nombre de usuario> </td>
+                </tr>
+                <tr>
+                    <td><label for="">Contraseña </label><input type="password" name="contra" placeholder="Minimo: 6 caracteres, 2 números, 1 mayúscula "></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centro">
+                        <p class="mensOculto">* Debe contener minimo 6 caracteres, 2 números y una mayuscula entre ellos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Contraseña </label><input type="password" name="contra" placeholder="Debe ser igual al anterior"></td>
+                </tr>
+                <tr>
+                    <td class="centro enviar"><input type="submit" name="enviar"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centro">
+                        <!-- Esto va oculto -->
+                        <p>Ya se encuentra registrado</p>
+                    </td>
+                    <td colspan="2" class="centro">
+                        <!-- Esto va oculto -->
+                        <p>Se ha registrado con exito</p>
+                    </td>
+                </tr>
+
+
+
+            </table>
+
+        </div>
+
+    </form>
+
+    <footer class="fin-hoja">
+
+        <p>Todos los derechos reservados por: <br> <span>  .:. María Florencia Martino  &copy; 2021 .:.</span></p>
+
+    </footer>
+
+
+    <script src="build/js/app.js"></script>
+
+</body>
+
+</html>

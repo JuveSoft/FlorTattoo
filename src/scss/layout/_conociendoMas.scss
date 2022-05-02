@@ -1,0 +1,96 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.conociendoMas {
+    background-color: rgb(182, 241, 252);
+    padding: 2rem 0;
+    h3,
+    p {
+        font-size: 3rem;
+        text-align: center;
+        color: v.$blanco;
+    }
+    .dia {
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+}
+
+.contenido-header {
+    h1 {
+        font-family: "IM Fell Double Pica SC";
+    }
+}
+
+.tatoo-contenedor {
+    display: block;
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+    p {
+        color: v.$negro;
+    }
+    margin-bottom: 7rem;
+}
+
+.tatoo {
+    //padding-top: 2rem;
+    p {
+        &:after {
+            content: '';
+            display: block;
+            width: 20rem;
+            //height: 2rem;
+            background-color: blue;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+    .icono {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .icono-salud {
+        width: 20rem;
+        height: 10rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+}
+
+.edm .nombre-tatoo:after {
+    background-image: url(src/icono/injector.png); //carpeta y nombre de icono video n°193
+}
+
+.rock .nombre-tatoo:after {
+    background-image: url(../icono/salud.png); //carpeta y nombre de icono
+}
+
+.salud {
+    @include m.resetear-lista;
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-amarillo {
+    background-color: v.$amarillo;
+    li:nth-child(odd) {
+        // odd selecciona los renglones impares
+        background-color: darken(v.$amarillo, 15%);
+    }
+}
+
+.bg-rosa {
+    background-color: v.$rosa;
+    li:nth-child(odd) {
+        background-color: darken(v.$rosa, 5%);
+    }
+}

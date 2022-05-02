@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.fin-hoja {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    text-align: center;
+    background-color: #012f05;
+    padding: .5rem;
+    border-radius: 5px;
+    p {
+        color: rgb(8, 247, 8);
+        font-size: 1.3rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    span {
+        color: white;
+        font-size: 1.6rem;
+    }
+    .redes {
+        display: flex;
+        position: relative;
+        margin: auto;
+        width: 80%;
+        height: 4rem;
+        background-color: rgb(84, 196, 240);
+        @include m.tablet {
+            margin: auto;
+            width: 40rem;
+            height: 6rem;
+            //background-color: rgb(10, 248, 10);
+        }
+    }
+    a {
+        display: flex;
+        width: 80%;
+    }
+}
